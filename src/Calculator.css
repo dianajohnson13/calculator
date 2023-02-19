@@ -1,0 +1,40 @@
+
+.container {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 6px 4px;
+  }
+  
+  .screen {
+    background: black;
+    color: white;
+    text-align: right;
+    padding: 4px 6px;
+    border-radius: 2px;
+  }
+  
+  .buttonBox {
+    margin-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    grid-template-rows: repeat(5, 26px);
+  }
+  
+  .buttonBox input[type="button"] {
+    border: none;
+    border-radius: 2px;
+  }
+  
+  .buttonBox input[type="button"]:active {
+    background: lightgray;
+  }
+  
+  .buttonBox input[type="button"][data-selected=true] {
+    background: lightgray;
+  }
+  
+  .doubleButton {
+    grid-row: span 3;
+    background-color: orange;
+  }
+  
